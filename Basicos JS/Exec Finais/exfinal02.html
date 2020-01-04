@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Exercício Final 02</title>
+</head>
+<body>
+    <h1>Exercício 2</h1>
+    <p>
+        Crie uma página HTML com um parágrafo. Ao clicar
+        no parágrafo, altere a cor do texto para verde.
+    </p>
+
+    <h1 onclick="voltarCor()">O texto abaixo irá mudar de cor!</h1>
+    <p id="paragrafo" onclick="mudarCor()">
+            A vossa maneira de viver seja sem ganância, 
+            contentando-vos com as coisas que tendes. 
+            Pois ele disse: Não te deixarei, 
+            nem te desampararei.
+    </p>
+    <!--O script será colocado abaixo-->
+    <script>
+        function mudarCor (){
+            troca = document.getElementById('paragrafo');
+            troca.style = "color: #00ff00";
+        }
+
+        function voltarCor(){
+            troca = document.getElementById('paragrafo');
+            troca.style = 'color: #000000';
+        }
+    </script>
+</body>
+</html>

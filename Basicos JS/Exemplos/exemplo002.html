@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Usando Variáveis</title>
+</head>
+<body>
+
+    <p id="p1"></p>
+    <p id="p2"></p>
+
+    <button type="button" onclick="mudar()">Mudar Nomes</button> ===> Giselle Diniz, esta guardado na função do botão.
+    <br><br>
+    <button type="button" onclick="novosnomes()">Escolha novos nomes!</button>
+
+    <script>
+        var nome = "Evandro";
+        var sobrenome = "Henrique";
+
+        document.getElementById('p1').innerHTML = nome;
+        document.getElementById('p2').innerHTML = sobrenome;
+
+        function mudar(){
+            nome = document.getElementById('p1');
+            sobrenome = document.getElementById('p2');
+            nome.innerHTML = "Giselle";
+            sobrenome.innerHTML = "Diniz";
+        }
+
+        function novosnomes(){
+            n1 = window.prompt('Digite um nome:');
+            n2 = window.prompt('Digite um sobrenome:');
+            nome.innerHTML = n1;
+            sobrenome.innerHTML = n2;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Mudando um Elemento HTML</title>
+    <script>
+        function escreva(){
+            window.document.write("Escrevi alguma coisa!!!");
+        }
+
+        function voltar (){
+            original.innerHTML = "A mágica já aconteceu.";
+            original.style = "color: #000000";
+        }
+    </script>
+</head>
+<body>
+    <h1>Exemplo 001</h1>
+
+    <p>O java script pode modificar o conteúdo
+        de um elemento HTML.
+    </p>
+
+    <p id="olamundo">A mágica esta prestes a acontecer.</p>
+
+    <button type="button" onclick="mudar()">Clique aqui!</button>
+    <button type="button" onclick="voltar()">Voltar!</button>
+    <button type="button" onclick="escreva()">Escreva!</button>
+    <br><br>
+
+    
+    
+    <script src="meuscript.js"></script>
+</body>
+</html>

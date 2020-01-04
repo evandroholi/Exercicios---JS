@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Exercício Final 01</title>
+</head>
+<body>
+    <h1>Exercício 1</h1>
+    <p>Crie uma página HTML com um cabeçalho h1 e um botão.
+        Ao clicar no botão, altere o texto do cabeçalho
+        para "A mágica continua!".
+    </p>
+
+    <h1 id="titulo">Este texto irá mudar.</h1>
+    <br>
+    <input type="button" value="Clique para mudar o texto!" onclick="mudar()">
+    <!--Scripts deste ponto para baixo-->
+    <script>
+        function mudar(){
+            titulo = document.getElementById('titulo');
+            titulo.innerHTML = 'A mágica continua!';
+        }
+    </script>
+</body>
+</html>

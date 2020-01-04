@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Exercício 04</title>
+</head>
+<body>
+    <h1>Exercício 4</h1>
+    <p id="teste">
+        Crie uma página com uma imagem de uma criança,
+        ex(criança.jpg) e um botão "Crescer". Crie uma função
+        chamada trocarImagem. Nessa função, altere a propriedade
+        src da imagem para "Adulto.jpg". Chame a função
+        trocarImagem no onclick do botão Crescer. Escreva ainda
+        um log no console com a mensagem "imagem trocada com 
+        sucesso!".
+    </p>
+    <p><strong>Resposta logo abaixo:</strong></p>
+    <br><br>
+    <img id="foto" src="bebe.jfif" alt="Bebe" height="150" width="200">
+    <br>
+    <button onclick="trocarImagem()">Crescer</button>
+    <!--Script no final do código antes de fechar o body-->
+    <script>
+        function trocarImagem() {
+            imagem = document.getElementById('foto');
+            imagem.src = 'cresceu.jfif';
+            //imagem.height = 300;
+            //imagem.width = 400;
+            console.log('Imagem trocada com sucesso!')
+        }
+    </script>
+</body>
+</html>

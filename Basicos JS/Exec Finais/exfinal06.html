@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Exercício 06</title>
+</head>
+<body>
+    <h1>Exercício 6</h1>
+    <p>
+        Crie uma página contendo 3 miniaturas de magens
+        e uma div. Ao clicar em cada imagem, a imagem 
+        deve aparecer no seu tamanho original na div.
+    </p>
+    <h2>Resposta logo abaixo:</h2>
+    <img id="foto1" src="adulto.jfif" alt="Adulto" width="100" onclick="mostrar1()">
+    <img id="foto2" src="bebe.jfif" alt="Bebezinho" width="100" onclick="mostrar2()">
+    <img id="foto3" src="cresceu.jfif" alt="Jovem" width="100" onclick="mostrar3()">
+
+    <div id="mostrar"><img id="imagem" src="" alt=""></div>
+    <!--Script-->
+    <script>
+        foto = document.getElementById('foto1');
+        mostrar = document.getElementById('mostrar');
+        imagem = document.getElementById('imagem');
+
+        function mostrar1(){
+            imagem.src = "adulto.jfif";
+        }
+
+        function mostrar2(){
+            imagem.src = "bebe.jfif";
+        }
+
+        function mostrar3(){
+            imagem.src = 'cresceu.jfif';
+        }
+    </script>
+</body>
+</html>
