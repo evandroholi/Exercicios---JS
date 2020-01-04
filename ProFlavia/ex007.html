@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        Dê um clique no botão para abrir uma janela simples:
+        <input type="button" name="abrir" value="janela1" onclick="abre1()"><br><br>
+
+        Dê um clique no botão para abrir uma janela de 350px de largura por 400px de altura, sem barras e menus:
+        <input type="button" value="janela2" name="abrir" onclick="abre2()"><br><br>
+
+        Dê um clique no botão para abrir uma janela com menu e barra de rolagens, mas sem barra de endereço e barra padrão:
+        <input type="button" value="janela3" name="abrir" onclick="abre3()">
+    </form>
+
+
+    <script>
+        function abre1(){
+            window.open(`http://www.google.com.br`);
+        }
+        function abre2(){
+            window.open("http://www.google.com.br",'simples',"width=350,height=400");
+        }
+        function abre3(){
+            window.open(`http://google.com.br`,'simples','width=300,height=200');
+        }
+    </script>
+</body>
+</html>
