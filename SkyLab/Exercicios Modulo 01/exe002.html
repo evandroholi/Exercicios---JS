@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Função exibindo números pares</title>
+</head>
+<body>
+    <script>
+        var x = -5, y = 10;
+        var contador = 0;
+        function pares(x, y){
+            for (var i = x; i <= y; i++){
+                if (i % 2 == 0) {
+                    console.log(i);
+                    contador++;
+                };
+            };
+        };
+        pares(x,y);
+        console.log(`Foram impressos ${contador} números pares.`);
+    </script>
+</body>
+</html>
